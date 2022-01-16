@@ -1,9 +1,12 @@
+import UserResults from "../components/users/UserResults"
+
 export default function Home() {
     return (
         <div>
-            <div className="text-6xl">
+            <h1 className="text-6xl">
                 Welcome
-            </div>
+            </h1>
+            <UserResults />
         </div>
     )
 }
