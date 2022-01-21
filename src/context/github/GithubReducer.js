@@ -10,8 +10,14 @@ export default function githubReducer(state, action) {
       return {
         ...state,
         user: action.payload,
-        loading: false
-      }
+        loading: false,
+      };
+    case "GET_REPOS":
+      return {
+        ...state,
+        repos: action.payload,
+        loading: false,
+      };
     case "SET_LOADING":
       return {
         ...state,
